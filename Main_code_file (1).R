@@ -94,25 +94,5 @@ read_file_possibly <- purrr::safely(read_file1)
 
 data <- purrr::map(url,read_file_possibly)
 
+# Testing 1
 
-# Code for testing
-
-data1
-
-data1[[101]]
-
-x <- list(1, c(1:2), c(1:3))
-x %>% purrr::map(sum)
-
-x %>% 
-  purrr::map(sum) %>% 
-  as_loop()
-
-out <- vector("list", length = length(x))
-
-for (i in seq_along(x)) {
-  out[[i]] <- sum(x[[i]])
-}
-
-data <- purrr::map(url,~rio::import(file = .x))
-data

@@ -1,3 +1,4 @@
+#The devtools package is necessary for installing our package. To install this package please use the command shown below:
 
 install.packages("remotes")
 remotes::install_github("TimTeaFan/loopurrr")
